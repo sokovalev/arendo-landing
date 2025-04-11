@@ -1,103 +1,385 @@
-import Image from "next/image";
+"use client";
 
-export default function Home() {
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Toaster } from "@/components/ui/sonner";
+import { toast } from "sonner";
+import {
+  Building2,
+  CalendarClock,
+  BellRing,
+  Wallet,
+  FolderArchive,
+  Clock,
+  DollarSign,
+  ShieldCheck,
+  ArrowRight,
+  Zap,
+  CheckCircle2,
+  MessageSquare,
+  Smartphone,
+} from "lucide-react";
+import HeroImage from "@/components/HeroImage";
+import FeatureCard from "@/components/FeatureCard";
+import FaqSection from "@/components/FaqSection";
+import Footer from "@/components/Footer";
+import ProductDemo from "@/components/ProductDemo";
+import SeoContent from "@/components/SeoContent";
+
+const Index = () => {
+  const [email, setEmail] = useState("");
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+
+    // Simulate API call
+    setTimeout(() => {
+      setLoading(false);
+      toast.success(`Спасибо! Мы уведомим вас о запуске и ранних скидках.`);
+      setEmail("");
+    }, 1000);
+  };
+
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className="min-h-screen font-sans">
+      <Toaster position="top-center" />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      {/* Header */}
+      <header className="border-b border-gray-100 py-4 px-6 md:px-8 sticky top-0 bg-white/90 backdrop-blur-sm z-10">
+        <div className="max-w-7xl mx-auto flex justify-between items-center">
+          <div className="flex items-center space-x-2">
+            <Building2 className="h-8 w-8 text-primary" />
+            <span className="text-2xl font-bold">ZenRent</span>
+          </div>
+          <nav className="hidden md:flex items-center space-x-6">
+            <a
+              href="#features"
+              className="text-sm font-medium hover:text-primary transition-colors"
+            >
+              Возможности
+            </a>
+            <a
+              href="#benefits"
+              className="text-sm font-medium hover:text-primary transition-colors"
+            >
+              Преимущества
+            </a>
+            <a
+              href="#demo"
+              className="text-sm font-medium hover:text-primary transition-colors"
+            >
+              Демо
+            </a>
+            <a
+              href="#faq"
+              className="text-sm font-medium hover:text-primary transition-colors"
+            >
+              FAQ
+            </a>
+          </nav>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </header>
+
+      {/* Hero Section */}
+      <section className="py-16 md:py-24 px-6 md:px-8 bg-gradient-to-b from-accent/50 to-white">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+          <div className="space-y-6">
+            <h1 className="text-4xl md:text-5xl font-bold leading-tight text-secondary animate-fade-in">
+              Автоматизация{" "}
+              <span className="text-primary">управления арендой</span> для
+              частных владельцев
+            </h1>
+            <p className="text-lg text-muted-foreground">
+              Идеальное CRM-решение для владельцев 1-5 квартир. Автоматизируйте
+              платежи, отправляйте напоминания и храните документы в одном
+              месте, экономя до 10 часов в месяц.
+            </p>
+
+            <form onSubmit={handleSubmit} className="space-y-4 pt-4">
+              <Input
+                type="email"
+                placeholder="Ваш email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+                className="flex-grow"
+              />
+              <Button
+                type="submit"
+                disabled={loading}
+                className="w-full sm:w-auto text-base font-medium group transition-all duration-300 hover:translate-x-1"
+              >
+                {loading ? (
+                  "Отправка..."
+                ) : (
+                  <span className="flex items-center">
+                    Получить ранний доступ{" "}
+                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </span>
+                )}
+              </Button>
+            </form>
+
+            <p className="text-sm text-muted-foreground">
+              Мы уведомим вас, когда сервис будет запущен. Только полезная
+              информация и специальные условия для первых пользователей.
+              Никакого спама.
+            </p>
+          </div>
+
+          <div className="order-first md:order-last flex justify-center animate-float">
+            <div className="w-full max-w-md hover-scale">
+              <HeroImage />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Features Section */}
+      <section id="features" className="py-16 md:py-24 px-6 md:px-8 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Умная CRM-система для арендодателей
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              ZenRent упрощает управление недвижимостью для частных владельцев,
+              экономя время и снижая риски.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <FeatureCard
+              icon={<CalendarClock className="h-10 w-10 text-primary" />}
+              title="Календарь платежей"
+              description="Отслеживайте все арендные платежи и коммунальные услуги в едином интерактивном календаре с уведомлениями."
+              number="01"
+            />
+
+            <FeatureCard
+              icon={<BellRing className="h-10 w-10 text-primary" />}
+              title="Автоматические напоминания"
+              description="Система отправляет напоминания жильцам о предстоящих платежах через SMS или Telegram без вашего участия."
+              number="02"
+            />
+
+            <FeatureCard
+              icon={<Wallet className="h-10 w-10 text-primary" />}
+              title="Учет расходов и доходов"
+              description="Отслеживайте все платежи и расходы на обслуживание с наглядной аналитикой рентабельности."
+              number="03"
+            />
+
+            <FeatureCard
+              icon={<FolderArchive className="h-10 w-10 text-primary" />}
+              title="Хранение документов"
+              description="Безопасно храните договоры аренды, акты и другие документы с быстрым доступом в любой момент."
+              number="04"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Demo Section */}
+      <section id="demo" className="py-16 md:py-24 px-6 md:px-8 bg-muted">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Как работает ZenRent
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Посмотрите, как ZenRent поможет вам автоматизировать рутинные
+              задачи и улучшить взаимодействие с арендаторами
+            </p>
+          </div>
+
+          <ProductDemo />
+        </div>
+      </section>
+
+      {/* Benefits Section */}
+      <section id="benefits" className="py-16 md:py-24 px-6 md:px-8 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Почему ZenRent?
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Современный инструмент для частных арендодателей: автоматизируйте
+              аренду, управляйте доходами и не теряйте время на рутину.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+              <Clock className="h-12 w-12 text-primary mb-4" />
+              <h3 className="text-xl font-bold mb-2">
+                Экономит до 10 часов в месяц
+              </h3>
+              <p className="text-muted-foreground">
+                Автоматизация рутинных задач освобождает вас от постоянных
+                напоминаний, проверок оплат и ведения бумажного учета.
+              </p>
+              <ul className="mt-4 space-y-2">
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                  <span className="text-sm">Автоматический учет платежей</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                  <span className="text-sm">
+                    Напоминания без вашего участия
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+              <DollarSign className="h-12 w-12 text-primary mb-4" />
+              <h3 className="text-xl font-bold mb-2">
+                Снижает потери на 15-20%
+              </h3>
+              <p className="text-muted-foreground">
+                Уменьшение риска просрочек платежей и более эффективное
+                управление расходами повышают вашу прибыль.
+              </p>
+              <ul className="mt-4 space-y-2">
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                  <span className="text-sm">
+                    Своевременное получение платежей
+                  </span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                  <span className="text-sm">
+                    Контроль коммунальных расходов
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+              <ShieldCheck className="h-12 w-12 text-primary mb-4" />
+              <h3 className="text-xl font-bold mb-2">
+                Профессиональный подход
+              </h3>
+              <p className="text-muted-foreground">
+                Создает имидж ответственного арендодателя и улучшает отношения с
+                арендаторами, увеличивая срок аренды.
+              </p>
+              <ul className="mt-4 space-y-2">
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                  <span className="text-sm">Прозрачная система учета</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                  <span className="text-sm">
+                    Юридически грамотное оформление
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Integration Section */}
+      <section className="py-16 md:py-24 px-6 md:px-8 bg-muted">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Удобные интеграции
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              ZenRent легко интегрируется с популярными сервисами для более
+              эффективного управления
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow text-center">
+              <MessageSquare className="h-16 w-16 text-primary mx-auto mb-4" />
+              <h3 className="text-xl font-bold mb-2">Telegram</h3>
+              <p className="text-muted-foreground">
+                Получайте уведомления и отправляйте напоминания арендаторам
+                через популярный мессенджер
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow text-center">
+              <Smartphone className="h-16 w-16 text-primary mx-auto mb-4" />
+              <h3 className="text-xl font-bold mb-2">SMS-уведомления</h3>
+              <p className="text-muted-foreground">
+                Автоматическая отправка SMS напоминаний арендаторам о
+                предстоящих платежах
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow text-center">
+              <Zap className="h-16 w-16 text-primary mx-auto mb-4" />
+              <h3 className="text-xl font-bold mb-2">API для разработчиков</h3>
+              <p className="text-muted-foreground">
+                Интегрируйте ZenRent с другими системами через наш открытый API
+                (скоро)
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 md:py-24 px-6 md:px-8 bg-primary text-primary-foreground">
+        <div className="max-w-3xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            Получите ранний доступ к ZenRent с 50% скидкой
+          </h2>
+          <p className="text-xl mb-8">
+            Оставьте свой email, и мы сообщим вам о запуске. Первые 100
+            пользователей получат полгода использования сервиса со скидкой 50%.
+          </p>
+
+          <form
+            onSubmit={handleSubmit}
+            className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto"
+          >
+            <Input
+              type="email"
+              placeholder="Ваш email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+              className="flex-grow bg-white/10 border-white/20 text-white placeholder:text-white/70"
+            />
+            <Button
+              type="submit"
+              disabled={loading}
+              variant="cta"
+              size="lg"
+              className="whitespace-nowrap"
+            >
+              {loading ? "Отправка..." : "Получить доступ"}
+            </Button>
+          </form>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section id="faq">
+        <FaqSection />
+      </section>
+
+      {/* SEO Content Section */}
+      <SeoContent />
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
-}
+};
+
+export default Index;
