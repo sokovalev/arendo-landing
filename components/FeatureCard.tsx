@@ -23,8 +23,8 @@ const FeatureCard = ({
       <div className="mb-4 transform transition-transform duration-300 group-hover:scale-110">
         {icon}
       </div>
-      <h3 className="text-xl font-bold mb-2 relative z-10">{title}</h3>
-      <p className="text-muted-foreground relative z-10">{description}</p>
+      <h3 className="text-xl font-bold mb-2 relative z-2">{title}</h3>
+      <p className="text-muted-foreground relative z-2">{description}</p>
     </div>
   );
 };

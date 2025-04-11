@@ -1,10 +1,7 @@
 "use client";
 
-import { useState } from "react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
 import { Toaster } from "@/components/ui/sonner";
-import { toast } from "sonner";
+
 import {
   Building2,
   CalendarClock,
@@ -14,7 +11,6 @@ import {
   Clock,
   DollarSign,
   ShieldCheck,
-  ArrowRight,
   Zap,
   CheckCircle2,
   MessageSquare,
@@ -26,25 +22,13 @@ import FaqSection from "@/components/FaqSection";
 import Footer from "@/components/Footer";
 import ProductDemo from "@/components/ProductDemo";
 import SeoContent from "@/components/SeoContent";
+import LeadForm from "@/components/LeadForm";
+import HeadMeta from "@/components/HeadMeta";
 
 const Index = () => {
-  const [email, setEmail] = useState("");
-  const [loading, setLoading] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setLoading(true);
-
-    // Simulate API call
-    setTimeout(() => {
-      setLoading(false);
-      toast.success(`Спасибо! Мы уведомим вас о запуске и ранних скидках.`);
-      setEmail("");
-    }, 1000);
-  };
-
   return (
     <div className="min-h-screen font-sans">
+      <HeadMeta />
       <Toaster position="top-center" />
 
       {/* Header */}
@@ -98,30 +82,7 @@ const Index = () => {
               месте, экономя до 10 часов в месяц.
             </p>
 
-            <form onSubmit={handleSubmit} className="space-y-4 pt-4">
-              <Input
-                type="email"
-                placeholder="Ваш email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-                className="flex-grow"
-              />
-              <Button
-                type="submit"
-                disabled={loading}
-                className="w-full sm:w-auto text-base font-medium group transition-all duration-300 hover:translate-x-1"
-              >
-                {loading ? (
-                  "Отправка..."
-                ) : (
-                  <span className="flex items-center">
-                    Получить ранний доступ{" "}
-                    <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                  </span>
-                )}
-              </Button>
-            </form>
+            <LeadForm />
 
             <p className="text-sm text-muted-foreground">
               Мы уведомим вас, когда сервис будет запущен. Только полезная
@@ -343,28 +304,7 @@ const Index = () => {
             пользователей получат полгода использования сервиса со скидкой 50%.
           </p>
 
-          <form
-            onSubmit={handleSubmit}
-            className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto"
-          >
-            <Input
-              type="email"
-              placeholder="Ваш email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-              className="flex-grow bg-white/10 border-white/20 text-white placeholder:text-white/70"
-            />
-            <Button
-              type="submit"
-              disabled={loading}
-              variant="cta"
-              size="lg"
-              className="whitespace-nowrap"
-            >
-              {loading ? "Отправка..." : "Получить доступ"}
-            </Button>
-          </form>
+          <LeadForm variant="secondary" />
         </div>
       </section>
 
