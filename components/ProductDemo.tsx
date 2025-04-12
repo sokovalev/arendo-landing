@@ -22,7 +22,9 @@ const ProductDemo = () => {
             >
               <div className="flex flex-col items-center space-y-1 py-1">
                 <CalendarClock className="h-5 w-5" />
-                <span className="text-xs font-medium">Календарь</span>
+                <span className="text-xs font-medium max-[420px]:hidden">
+                  Календарь
+                </span>
               </div>
             </TabsTrigger>
             <TabsTrigger
@@ -31,7 +33,9 @@ const ProductDemo = () => {
             >
               <div className="flex flex-col items-center space-y-1 py-1">
                 <BellRing className="h-5 w-5" />
-                <span className="text-xs font-medium">Напоминания</span>
+                <span className="text-xs font-medium   max-[420px]:hidden">
+                  Напоминания
+                </span>
               </div>
             </TabsTrigger>
             <TabsTrigger
@@ -40,7 +44,9 @@ const ProductDemo = () => {
             >
               <div className="flex flex-col items-center space-y-1 py-1">
                 <Wallet className="h-5 w-5" />
-                <span className="text-xs font-medium">Платежи</span>
+                <span className="text-xs font-medium  max-[420px]:hidden">
+                  Платежи
+                </span>
               </div>
             </TabsTrigger>
             <TabsTrigger
@@ -49,7 +55,9 @@ const ProductDemo = () => {
             >
               <div className="flex flex-col items-center space-y-1 py-1">
                 <Building2 className="h-5 w-5" />
-                <span className="text-xs font-medium">Объекты</span>
+                <span className="text-xs font-medium  max-[420px]:hidden">
+                  Объекты
+                </span>
               </div>
             </TabsTrigger>
           </TabsList>
