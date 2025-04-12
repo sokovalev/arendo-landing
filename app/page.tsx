@@ -1,5 +1,6 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import { Toaster } from "@/components/ui/sonner";
 
 import {
@@ -16,13 +17,20 @@ import {
   MessageSquare,
   Smartphone,
 } from "lucide-react";
-import HeroImage from "@/components/HeroImage";
-import FeatureCard from "@/components/FeatureCard";
-import FaqSection from "@/components/FaqSection";
-import Footer from "@/components/Footer";
-import ProductDemo from "@/components/ProductDemo";
-import SeoContent from "@/components/SeoContent";
-import LeadForm from "@/components/LeadForm";
+
+// Dynamically import non-critical components
+const HeroImage = dynamic(() => import("@/components/HeroImage"), {
+  loading: () => (
+    <div className="w-full h-[400px] bg-accent/20 animate-pulse rounded-lg" />
+  ),
+  ssr: false,
+});
+const FeatureCard = dynamic(() => import("@/components/FeatureCard"));
+const FaqSection = dynamic(() => import("@/components/FaqSection"));
+const Footer = dynamic(() => import("@/components/Footer"));
+const ProductDemo = dynamic(() => import("@/components/ProductDemo"));
+const SeoContent = dynamic(() => import("@/components/SeoContent"));
+const LeadForm = dynamic(() => import("@/components/LeadForm"));
 
 const Index = () => {
   return (
