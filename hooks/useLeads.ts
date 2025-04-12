@@ -8,6 +8,7 @@ type Lead = {
 };
 
 export function useLeads() {
+  const [isInitiallyLoading, setIsInitiallyLoading] = useState(true);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [leads, setLeads] = useState<Lead[]>([]);
@@ -27,8 +28,9 @@ export function useLeads() {
       setError(error as string);
     } finally {
       setLoading(false);
+      setIsInitiallyLoading(false);
     }
-  }, [setLeads, setError, setLoading]);
+  }, [setLeads, setError, setLoading, setIsInitiallyLoading]);
 
   const refetch = useCallback(() => {
     fetchLeads();
@@ -38,5 +40,5 @@ export function useLeads() {
     fetchLeads();
   }, []);
 
-  return { leads, loading, error, refetch };
+  return { leads, loading, error, refetch, isInitiallyLoading };
 }

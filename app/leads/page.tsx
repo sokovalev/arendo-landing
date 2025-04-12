@@ -18,7 +18,13 @@ import {
 import { useLeads } from "@/hooks/useLeads";
 import { useAuth } from "@/hooks/useAuth";
 export default function LeadsPage() {
-  const { leads, error, loading: isLoadingLeads, refetch } = useLeads();
+  const {
+    leads,
+    error,
+    loading: isLoadingLeads,
+    refetch,
+    isInitiallyLoading,
+  } = useLeads();
   const { loading: isLoadingAuth, auth } = useAuth({
     onSuccess: () => {
       refetch();
@@ -26,7 +32,7 @@ export default function LeadsPage() {
   });
   const [password, setPassword] = useState("");
 
-  if (isLoadingLeads)
+  if (isLoadingLeads || isInitiallyLoading)
     return (
       <div className="flex h-screen w-screen items-center justify-center">
         <Loader className="animate-spin" />
@@ -60,8 +66,6 @@ export default function LeadsPage() {
         </Card>
       </form>
     );
-
-  console.log(leads);
 
   return (
     <div className="flex flex-col gap-4 p-4">
