@@ -23,12 +23,10 @@ import Footer from "@/components/Footer";
 import ProductDemo from "@/components/ProductDemo";
 import SeoContent from "@/components/SeoContent";
 import LeadForm from "@/components/LeadForm";
-import HeadMeta from "@/components/HeadMeta";
 
 const Index = () => {
   return (
     <div className="min-h-screen font-sans">
-      <HeadMeta />
       <Toaster position="top-center" />
 
       {/* Header */}
