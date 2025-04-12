@@ -1,8 +1,8 @@
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import { toast } from "sonner";
+import { useCreateLead } from "@/hooks/useCreateLead";
 
 export default function LeadForm({
   variant = "primary",
@@ -10,34 +10,20 @@ export default function LeadForm({
   variant?: "primary" | "secondary";
 }) {
   const [email, setEmail] = useState("");
-  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setLoading(true);
-
-    try {
-      const response = await fetch("/lead", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email }),
-      });
-
-      if (!response.ok) {
-        throw new Error("Failed to submit email");
+  const { loading, createLead } = useCreateLead();
+  const handleSubmit = useCallback(
+    async (e: React.FormEvent) => {
+      e.preventDefault();
+      try {
+        await createLead(email);
+        setEmail("");
+      } catch (error) {
+        console.error(error);
       }
-
-      toast.success("Спасибо! Мы свяжемся с вами в ближайшее время.");
-      setEmail("");
-    } catch (err) {
-      console.error(err);
-      toast.error("Произошла ошибка. Пожалуйста, попробуйте позже.");
-    } finally {
-      setLoading(false);
-    }
-  };
+    },
+    [email, createLead, setEmail]
+  );
 
   return (
     <>

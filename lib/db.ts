@@ -1,7 +1,7 @@
 import Database from "better-sqlite3";
 import { join } from "path";
 
-const db = new Database(join(process.cwd(), "leads.db"));
+export const db = new Database(join(process.cwd(), "leads.db"));
 
 // Initialize the database with the leads table
 db.exec(`

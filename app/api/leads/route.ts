@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { addLead } from "@/lib/db";
+import { addLead, getLeads } from "@/lib/db";
 
 export async function POST(request: Request) {
   try {
@@ -38,4 +38,9 @@ export async function POST(request: Request) {
       { status: 500 }
     );
   }
+}
+
+export async function GET() {
+  const leads = await getLeads();
+  return NextResponse.json(leads);
 }
