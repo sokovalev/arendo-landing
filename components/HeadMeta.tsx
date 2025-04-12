@@ -16,7 +16,6 @@ export default function HeadMeta() {
         content="управление арендой, автоматизация сдачи недвижимости, crm для арендодателей, напоминания арендаторам, учет платежей аренды"
       />
       <meta name="author" content="ZenRent" />
-
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://zenrent.ru/" />
       <meta
@@ -27,7 +26,6 @@ export default function HeadMeta() {
         property="og:description"
         content="Умная система для частных арендодателей. Автоматизация платежей, SMS-напоминания арендаторам, учет коммунальных платежей и хранение документов."
       />
-
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@zenrent" />
       <meta
@@ -38,6 +36,7 @@ export default function HeadMeta() {
         name="twitter:description"
         content="Умная система для частных арендодателей. Автоматизация платежей, SMS-напоминания арендаторам, учет коммунальных платежей и хранение документов."
       />
+      <meta name="yandex-verification" content="2537e05d6ecca6ce" />y
     </Head>
   );
 }
