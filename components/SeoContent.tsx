@@ -95,7 +95,7 @@ const SeoContent = () => {
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                   <span className="text-muted-foreground">
-                    Частных собственников квартир, сдающих жилье в аренду
+                    Частных собственников недвижимости, сдающих объекты в аренду
                   </span>
                 </li>
                 <li className="flex items-start gap-2">

@@ -62,7 +62,7 @@ const HeroImage = () => {
       </div>
 
       <div className="mt-6 pt-4 border-t border-gray-100 flex justify-between">
-        <div className="text-sm text-muted-foreground">Всего квартир: 3</div>
+        <div className="text-sm text-muted-foreground">Всего объектов: 3</div>
         <div className="text-sm font-medium text-primary">Подробнее</div>
       </div>
     </div>
