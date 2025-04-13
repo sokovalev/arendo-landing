@@ -6,8 +6,10 @@ import { useCreateLead } from "@/hooks/useCreateLead";
 
 export default function LeadForm({
   variant = "primary",
+  buttonText = "Получить ранний доступ",
 }: {
   variant?: "primary" | "secondary";
+  buttonText?: string;
 }) {
   const [email, setEmail] = useState("");
 
@@ -53,7 +55,7 @@ export default function LeadForm({
             "Отправка..."
           ) : (
             <span className="flex items-center">
-              Получить ранний доступ{" "}
+              {buttonText}
               <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </span>
           )}

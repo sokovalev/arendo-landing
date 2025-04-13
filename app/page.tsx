@@ -169,6 +169,28 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Mid-page CTA Section */}
+      <section className="py-16 px-6 md:px-8 bg-accent/50">
+        <div className="max-w-3xl mx-auto rounded-xl bg-gradient-to-r from-primary/90 to-primary p-8 md:p-12 shadow-lg text-white">
+          <div className="text-center mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">
+              Хотите быть в числе первых пользователей ZenRent?
+            </h2>
+            <p className="text-lg mb-0">
+              Подпишитесь на наши обновления и получите 50% скидку на первые 6
+              месяцев использования
+            </p>
+          </div>
+
+          <LeadForm variant="secondary" buttonText="Получить доступ" />
+
+          <p className="text-xs text-center mt-4 text-white/70">
+            Только полезная информация и специальные условия для первых
+            пользователей. Никакого спама.
+          </p>
+        </div>
+      </section>
+
       {/* Benefits Section */}
       <section id="benefits" className="py-16 md:py-24 px-6 md:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
