@@ -12,7 +12,7 @@ import {
   Clock,
   DollarSign,
   ShieldCheck,
-  Zap,
+  ChartColumn,
   CheckCircle2,
   MessageSquare,
   Smartphone,
@@ -40,10 +40,10 @@ const Index = () => {
       {/* Header */}
       <header className="border-b border-gray-100 py-4 px-6 md:px-8 sticky top-0 bg-white/90 backdrop-blur-sm z-10">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <div className="flex items-center space-x-2">
+          <a href="#hero-section" className="flex items-center space-x-2">
             <Building2 className="h-8 w-8 text-primary" />
             <span className="text-2xl font-bold">ZenRent</span>
-          </div>
+          </a>
           <nav className="hidden md:flex items-center space-x-6">
             <a
               href="#features"
@@ -74,7 +74,10 @@ const Index = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="py-16 md:py-24 px-6 md:px-8 bg-gradient-to-b from-accent/50 to-white">
+      <section
+        className="py-16 md:py-24 px-6 md:px-8 bg-gradient-to-b from-accent/50 to-white"
+        id="hero-section"
+      >
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h1 className="text-4xl md:text-5xl font-bold leading-tight text-secondary animate-fade-in">
@@ -91,9 +94,8 @@ const Index = () => {
             <LeadForm />
 
             <p className="text-sm text-muted-foreground">
-              Мы уведомим вас, когда сервис будет запущен. Только полезная
-              информация и специальные условия для первых пользователей.
-              Никакого спама.
+              Запуск в мае 2025 года. Присоединяйтесь к списку ожидания и
+              получите эксклюзивные условия. Никакого спама.
             </p>
           </div>
 
@@ -288,11 +290,11 @@ const Index = () => {
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow text-center">
-              <Zap className="h-16 w-16 text-primary mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-2">API для разработчиков</h3>
+              <ChartColumn className="h-16 w-16 text-primary mx-auto mb-4" />
+              <h3 className="text-xl font-bold mb-2">Отчёты и аналитика</h3>
               <p className="text-muted-foreground">
-                Интегрируйте ZenRent с другими системами через наш открытый API
-                (скоро)
+                Получайте подробную аналитику по доходам, просрочкам и динамике
+                оплаты в удобных графиках и отчётах.
               </p>
             </div>
           </div>
