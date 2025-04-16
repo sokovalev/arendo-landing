@@ -1,0 +1,11 @@
+# Allow all web crawlers
+User-agent: *
+Allow: /
+
+# Disallow leads pages
+Disallow: /leads/
+Disallow: /leads
+Disallow: /leads/*
+
+# Sitemap location
+Sitemap: https://zenrent.com/sitemap.xml 
