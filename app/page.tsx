@@ -42,7 +42,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <a href="#hero-section" className="flex items-center space-x-2">
             <Building2 className="h-8 w-8 text-primary" />
-            <span className="text-2xl font-bold">ZenRent</span>
+            <span className="text-2xl font-bold">Arendo</span>
           </a>
           <nav className="hidden md:flex items-center space-x-6">
             <a
@@ -115,7 +115,7 @@ const Index = () => {
               Умная CRM-система для арендодателей
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              ZenRent упрощает управление недвижимостью для частных владельцев,
+              Arendo упрощает управление недвижимостью для частных владельцев,
               экономя время и снижая риски.
             </p>
           </div>
@@ -157,10 +157,10 @@ const Index = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Как работает ZenRent
+              Как работает Arendo
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Посмотрите, как ZenRent поможет вам автоматизировать рутинные
+              Посмотрите, как Arendo поможет вам автоматизировать рутинные
               задачи и улучшить взаимодействие с арендаторами
             </p>
           </div>
@@ -174,7 +174,7 @@ const Index = () => {
         <div className="max-w-3xl mx-auto rounded-xl bg-gradient-to-r from-primary/90 to-primary p-8 md:p-12 shadow-lg text-white">
           <div className="text-center mb-8">
             <h2 className="text-2xl md:text-3xl font-bold mb-4">
-              Хотите быть в числе первых пользователей ZenRent?
+              Хотите быть в числе первых пользователей Arendo?
             </h2>
             <p className="text-lg mb-0">
               Подпишитесь на наши обновления и получите 50% скидку на первые 6
@@ -196,7 +196,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Почему ZenRent?
+              Почему Arendo?
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Современный инструмент для частных арендодателей: автоматизируйте
@@ -287,7 +287,7 @@ const Index = () => {
               Удобные интеграции
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              ZenRent легко интегрируется с популярными сервисами для более
+              Arendo легко интегрируется с популярными сервисами для более
               эффективного управления
             </p>
           </div>
@@ -327,7 +327,7 @@ const Index = () => {
       <section className="py-16 md:py-24 px-6 md:px-8 bg-primary text-primary-foreground">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Получите ранний доступ к ZenRent с 50% скидкой
+            Получите ранний доступ к Arendo с 50% скидкой
           </h2>
           <p className="text-xl mb-8">
             Оставьте свой email, и мы сообщим вам о запуске. Первые 100

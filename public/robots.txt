@@ -8,4 +8,4 @@ Disallow: /leads
 Disallow: /leads/*
 
 # Sitemap location
-Sitemap: https://zenrent.com/sitemap.xml 
+Sitemap: https://arendo.pro/sitemap.xml 

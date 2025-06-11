@@ -10,96 +10,18 @@ const Footer = () => {
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <Building2 className="h-8 w-8 text-primary" />
-              <span className="text-2xl font-bold text-white">ZenRent</span>
+              <span className="text-2xl font-bold text-white">Arendo</span>
             </div>
             <p className="text-gray-400 max-w-md">
               Современное CRM-решение для управления арендной недвижимостью,
               созданное для частных арендодателей и небольших компаний.
             </p>
-            {/* 
-            <div className="mt-6 space-y-4">
-              <a
-                href="#"
-                className="flex items-center space-x-3 text-gray-400 hover:text-primary transition-colors"
-              >
-                <Mail className="h-5 w-5" />
-                <span>info@zenrent.ru</span>
-              </a>
-              <a
-                href="#"
-                className="flex items-center space-x-3 text-gray-400 hover:text-primary transition-colors"
-              >
-                <Phone className="h-5 w-5" />
-                <span>+7 (800) 555-35-35</span>
-              </a>
-              <a
-                href="#"
-                className="flex items-center space-x-3 text-gray-400 hover:text-primary transition-colors"
-              >
-                <MessageSquare className="h-5 w-5" />
-                <span>@zenrent_support (Telegram)</span>
-              </a>
-            </div> */}
           </div>
-          {/* 
-          <div>
-            <h3 className="text-lg font-semibold mb-4 text-white">
-              О компании
-            </h3>
-            <ul className="space-y-2 text-gray-400">
-              <li>
-                <a href="#" className="hover:text-primary transition-colors">
-                  О нас
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-primary transition-colors">
-                  Команда
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-primary transition-colors">
-                  Карьера
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-primary transition-colors">
-                  Блог
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-lg font-semibold mb-4 text-white">Ссылки</h3>
-            <ul className="space-y-2 text-gray-400">
-              <li>
-                <a href="#" className="hover:text-primary transition-colors">
-                  Документация API
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-primary transition-colors">
-                  Служба поддержки
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-primary transition-colors">
-                  Политика конфиденциальности
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-primary transition-colors">
-                  Условия использования
-                </a>
-              </li>
-            </ul>
-          </div> */}
         </div>
 
         <div className="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-500 text-sm">
-            &copy; {currentYear} ZenRent. Все права защищены.
+            &copy; {currentYear} Arendo. Все права защищены.
           </p>
 
           {/* <div className="flex space-x-4 mt-4 md:mt-0">

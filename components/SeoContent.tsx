@@ -5,7 +5,7 @@ const SeoContent = () => {
     <section className="py-16 px-6 md:px-8 bg-muted/30">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-3xl font-bold mb-8 text-secondary">
-          Эффективное управление арендой недвижимости с ZenRent
+          Эффективное управление арендой недвижимости с Arendo
         </h2>
 
         <div className="grid md:grid-cols-2 gap-12">
@@ -22,7 +22,7 @@ const SeoContent = () => {
               стресс.
             </p>
             <p className="text-muted-foreground">
-              ZenRent разработан специально для решения этих проблем. Наша
+              Arendo разработан специально для решения этих проблем. Наша
               автоматизированная CRM-система для арендодателей берет на себя все
               рутинные задачи, позволяя вам сосредоточиться на действительно
               важных вещах.
@@ -65,10 +65,10 @@ const SeoContent = () => {
 
           <div className="space-y-6">
             <h3 className="text-xl font-semibold mb-4">
-              ZenRent – инновационная CRM для частных арендодателей
+              Arendo – инновационная CRM для частных арендодателей
             </h3>
             <p className="text-muted-foreground">
-              ZenRent — сервис для частных владельцев, управляющих несколькими
+              Arendo — сервис для частных владельцев, управляющих несколькими
               объектами недвижимости. Подходит для аренды жилья, коммерческих и
               нежилых помещений. Упростите рутину, контролируйте платежи,
               экономьте время.
@@ -88,7 +88,7 @@ const SeoContent = () => {
 
             <div className="mt-6">
               <h4 className="font-semibold mb-2">
-                ZenRent идеально подходит для:
+                Arendo идеально подходит для:
               </h4>
               <ul className="space-y-2">
                 <li className="flex items-start gap-2">
