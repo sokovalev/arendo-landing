@@ -55,7 +55,7 @@ const Index = () => {
               href="#benefits"
               className="text-sm font-medium hover:text-primary transition-colors"
             >
-              Преимущества
+              Почему Arendo?
             </a>
             <a
               href="#demo"
@@ -75,27 +75,28 @@ const Index = () => {
 
       {/* Hero Section */}
       <section
-        className="py-16 md:py-24 px-6 md:px-8 bg-gradient-to-b from-accent/50 to-white"
+        className="py-16 md:pt-24 md:pb-12 px-6 md:px-8 bg-white"
         id="hero-section"
       >
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h1 className="text-4xl md:text-5xl font-bold leading-tight text-secondary animate-fade-in">
-              Автоматизация{" "}
-              <span className="text-primary">управления арендой</span> для
-              частных владельцев
+              Сдаёте квартиру?
+              <span className="text-primary">
+                Управляйте арендой просто и без стресса
+              </span>
             </h1>
             <p className="text-lg text-muted-foregroun1-5d">
-              Идеальное CRM-решение для частных владельцев объектов
-              недвижимости. Автоматизируйте платежи, отправляйте напоминания и
-              храните документы в одном месте, экономя до 10 часов в месяц.
+              Сервис сам напомнит жильцам о платеже, поможет учесть коммуналку и
+              сохранить документы в порядке. Экономьте время, не теряйте деньги
+              и будьте уверены, что всё под контролем.
             </p>
 
             <LeadForm />
 
             <p className="text-sm text-muted-foreground">
-              Запуск в мае 2025 года. Присоединяйтесь к списку ожидания и
-              получите эксклюзивные условия. Никакого спама.
+              Запускаемся осенью 2025. Первые пользователи получат эксклюзивные
+              условия при запуске. Никакого спама, обещаем.
             </p>
           </div>
 
@@ -108,15 +109,18 @@ const Index = () => {
       </section>
 
       {/* Features Section */}
-      <section id="features" className="py-16 md:py-24 px-6 md:px-8 bg-white">
+      <section
+        id="features"
+        className="py-16 md:pb-24 md:pt-12 px-6 md:px-8 bg-muted"
+      >
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Умная CRM-система для арендодателей
+              Ваш личный помощник в управлении арендой
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Arendo упрощает управление недвижимостью для частных владельцев,
-              экономя время и снижая риски.
+              С Arendo просто держать всё под контролем: платежи, коммуналку и
+              документы - без нервов и таблиц.
             </p>
           </div>
 
@@ -124,28 +128,28 @@ const Index = () => {
             <FeatureCard
               icon={<CalendarClock className="h-10 w-10 text-primary" />}
               title="Календарь платежей"
-              description="Отслеживайте все арендные платежи и коммунальные услуги в едином интерактивном календаре с уведомлениями."
+              description="Все платежи в одном понятном календаре. Точно знаете, кто, сколько и когда платит."
               number="01"
             />
 
             <FeatureCard
               icon={<BellRing className="h-10 w-10 text-primary" />}
-              title="Автоматические напоминания"
-              description="Система отправляет напоминания жильцам о предстоящих платежах через SMS или Telegram без вашего участия."
+              title="Напоминания жильцам"
+              description="Автоматически напоминаем жильцам о платеже через Telegram или SMS. Меньше стресса — больше порядка."
               number="02"
             />
 
             <FeatureCard
               icon={<Wallet className="h-10 w-10 text-primary" />}
-              title="Учет расходов и доходов"
-              description="Отслеживайте все платежи и расходы на обслуживание с наглядной аналитикой рентабельности."
+              title="Учет доходов и расходов"
+              description="Чётко видите доходы и расходы по аренде и ремонту. Просто считать прибыль с каждого объекта."
               number="03"
             />
 
             <FeatureCard
               icon={<FolderArchive className="h-10 w-10 text-primary" />}
-              title="Хранение документов"
-              description="Безопасно храните договоры аренды, акты и другие документы с быстрым доступом в любой момент."
+              title="Документы под рукой"
+              description="Документы всегда в порядке и под рукой. Больше не надо искать договоры в WhatsApp или на антресолях."
               number="04"
             />
           </div>
@@ -153,15 +157,15 @@ const Index = () => {
       </section>
 
       {/* Demo Section */}
-      <section id="demo" className="py-16 md:py-24 px-6 md:px-8 bg-muted">
+      <section id="demo" className="py-16 md:py-20 px-6 md:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Как работает Arendo
+              Посмотрите, как просто управлять арендой
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Посмотрите, как Arendo поможет вам автоматизировать рутинные
-              задачи и улучшить взаимодействие с арендаторами
+              Избавьтесь от рутины и сделайте отношения с арендаторами
+              комфортнее
             </p>
           </div>
 
@@ -170,37 +174,35 @@ const Index = () => {
       </section>
 
       {/* Mid-page CTA Section */}
-      <section className="py-16 px-6 md:px-8 bg-accent/50">
-        <div className="max-w-3xl mx-auto rounded-xl bg-gradient-to-r from-primary/90 to-primary p-8 md:p-12 shadow-lg text-white">
+      <section className="py-16 px-6 md:px-8 bg-primary text-primary-foreground">
+        <div className="max-w-3xl mx-auto rounded-xl bg-muted p-8 md:p-12 shadow-lg text-white">
           <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">
-              Хотите быть в числе первых пользователей Arendo?
+            <h2 className="text-2xl md:text-3xl font-bold mb-4 text-foreground">
+              Станьте одним из первых - начните с выгодой
             </h2>
-            <p className="text-lg mb-0">
-              Подпишитесь на наши обновления и получите 50% скидку на первые 6
-              месяцев использования
+            <p className="text-lg mb-0 text-muted-foreground">
+              Оставьте почту и получите 50% скидку на 6 месяцев после запуска
             </p>
           </div>
 
-          <LeadForm variant="secondary" buttonText="Получить доступ" />
+          <LeadForm variant="primary" buttonText="Получить скидку" />
 
           <p className="text-xs text-center mt-4 text-white/70">
-            Только полезная информация и специальные условия для первых
-            пользователей. Никакого спама.
+            Без спама — только важные новости и бонусы для первых.
           </p>
         </div>
       </section>
 
       {/* Benefits Section */}
-      <section id="benefits" className="py-16 md:py-24 px-6 md:px-8 bg-white">
+      <section id="benefits" className="py-16 md:py-20 px-6 md:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Почему Arendo?
+              Зачем вам Arendo?
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Современный инструмент для частных арендодателей: автоматизируйте
-              аренду, управляйте доходами и не теряйте время на рутину.
+              Простой и понятный сервис для тех, кто сам сдаёт жильё. Без
+              таблиц, переписок и беготни.
             </p>
           </div>
 
@@ -208,11 +210,11 @@ const Index = () => {
             <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
               <Clock className="h-12 w-12 text-primary mb-4" />
               <h3 className="text-xl font-bold mb-2">
-                Экономит до 10 часов в месяц
+                До 10 часов свободного времени в месяц
               </h3>
               <p className="text-muted-foreground">
-                Автоматизация рутинных задач освобождает вас от постоянных
-                напоминаний, проверок оплат и ведения бумажного учета.
+                Автоматизация избавляет от переписок, контроля платежей и
+                бумажек.
               </p>
               <ul className="mt-4 space-y-2">
                 <li className="flex items-start gap-2">
@@ -231,11 +233,11 @@ const Index = () => {
             <div className="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
               <DollarSign className="h-12 w-12 text-primary mb-4" />
               <h3 className="text-xl font-bold mb-2">
-                Снижает потери на 15-20%
+                Больше дохода, меньше потерь
               </h3>
               <p className="text-muted-foreground">
-                Уменьшение риска просрочек платежей и более эффективное
-                управление расходами повышают вашу прибыль.
+                Меньше просрочек, точный учёт расходов — снижает потери до 20%
+                каждый месяц.
               </p>
               <ul className="mt-4 space-y-2">
                 <li className="flex items-start gap-2">
@@ -259,8 +261,8 @@ const Index = () => {
                 Профессиональный подход
               </h3>
               <p className="text-muted-foreground">
-                Создает имидж ответственного арендодателя и улучшает отношения с
-                арендаторами, увеличивая срок аренды.
+                Жильцы видят: вы серьёзный и надёжный. Это укрепляет отношения и
+                снижает текучку.
               </p>
               <ul className="mt-4 space-y-2">
                 <li className="flex items-start gap-2">
@@ -280,11 +282,11 @@ const Index = () => {
       </section>
 
       {/* Integration Section */}
-      <section className="py-16 md:py-24 px-6 md:px-8 bg-muted">
+      <section className="py-16 md:py-20 px-6 md:px-8 bg-muted">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Удобные интеграции
+              Работает с тем, что вы уже используете
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Arendo легко интегрируется с популярными сервисами для более
@@ -297,8 +299,8 @@ const Index = () => {
               <MessageSquare className="h-16 w-16 text-primary mx-auto mb-4" />
               <h3 className="text-xl font-bold mb-2">Telegram</h3>
               <p className="text-muted-foreground">
-                Получайте уведомления и отправляйте напоминания арендаторам
-                через популярный мессенджер
+                Напоминания жильцам прямо в Telegram — быстро, привычно,
+                автоматически.
               </p>
             </div>
 
@@ -306,8 +308,8 @@ const Index = () => {
               <Smartphone className="h-16 w-16 text-primary mx-auto mb-4" />
               <h3 className="text-xl font-bold mb-2">SMS-уведомления</h3>
               <p className="text-muted-foreground">
-                Автоматическая отправка SMS напоминаний арендаторам о
-                предстоящих платежах
+                Не все в Telegram? Напоминания приходят и по SMS — ничего не
+                забудется.
               </p>
             </div>
 
@@ -315,8 +317,8 @@ const Index = () => {
               <ChartColumn className="h-16 w-16 text-primary mx-auto mb-4" />
               <h3 className="text-xl font-bold mb-2">Отчёты и аналитика</h3>
               <p className="text-muted-foreground">
-                Получайте подробную аналитику по доходам, просрочкам и динамике
-                оплаты в удобных графиках и отчётах.
+                Графики и цифры покажут, что идёт по плану, а где нужно
+                вмешаться.
               </p>
             </div>
           </div>
@@ -324,14 +326,14 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 md:py-24 px-6 md:px-8 bg-primary text-primary-foreground">
+      <section className="py-16 md:py-20 px-6 md:px-8 bg-primary text-primary-foreground">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Получите ранний доступ к Arendo с 50% скидкой
+            Присоединяйтесь раньше - и платите в 2 раза меньше
           </h2>
           <p className="text-xl mb-8">
-            Оставьте свой email, и мы сообщим вам о запуске. Первые 100
-            пользователей получат полгода использования сервиса со скидкой 50%.
+            Оставьте email — мы первыми пригласим вас в Arendo. А заодно дадим
+            скидку 50% на полгода.
           </p>
 
           <LeadForm variant="secondary" />

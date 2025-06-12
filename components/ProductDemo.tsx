@@ -65,7 +65,7 @@ const ProductDemo = () => {
 
         <ProductDemoTabContent
           name="calendar"
-          title="Единый календарь платежей"
+          title="Платежи и сроки - всегда перед глазами"
           className="bg-gradient-to-br from-blue-50 to-white"
         >
           <div
@@ -128,7 +128,7 @@ const ProductDemo = () => {
 
         <ProductDemoTabContent
           name="notifications"
-          title="Автоматические напоминания"
+          title="Напоминания отправляются сами - больше не нужно звонить и писать"
           className="bg-gradient-to-br from-purple-50 to-white"
         >
           <div
@@ -182,7 +182,7 @@ const ProductDemo = () => {
 
         <ProductDemoTabContent
           name="payments"
-          title="Учет доходов и расходов"
+          title="Видно, сколько вы заработали — и на что потратились"
           className="bg-gradient-to-br from-green-50 to-white"
         >
           <div
@@ -194,7 +194,7 @@ const ProductDemo = () => {
               <div>
                 <div className="font-medium">Получена оплата</div>
                 <div className="text-sm text-muted-foreground">
-                  Аренда, ул. Ленина, 42
+                  ул. Ленина, 42 - аренда
                 </div>
               </div>
             </div>
@@ -213,7 +213,7 @@ const ProductDemo = () => {
               <div>
                 <div className="font-medium">Оплачен счет</div>
                 <div className="text-sm text-muted-foreground">
-                  ЖКУ, ул. Ленина, 42
+                  ул. Ленина, 42 - ЖКУ
                 </div>
               </div>
             </div>
@@ -230,9 +230,9 @@ const ProductDemo = () => {
             <div className="flex items-center gap-3">
               <Wallet className="h-8 w-8 text-red-500" />
               <div>
-                <div className="font-medium">Плановый ремонт</div>
+                <div className="font-medium">Расход на ремонт</div>
                 <div className="text-sm text-muted-foreground">
-                  Замена смесителя, пр. Мира, 15
+                  пр. Мира, 15 - замена смесителя
                 </div>
               </div>
             </div>
@@ -245,7 +245,7 @@ const ProductDemo = () => {
 
         <ProductDemoTabContent
           name="properties"
-          title="Управление объектами"
+          title="Вся ваша недвижимость - под контролем"
           className="bg-gradient-to-br from-amber-50 to-white"
         >
           <div
