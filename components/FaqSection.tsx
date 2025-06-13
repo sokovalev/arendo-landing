@@ -45,6 +45,18 @@ const FaqSection = () => {
 
           <AccordionItem value="item-3">
             <AccordionTrigger>
+              Можно ли вести учёт арендных платежей в Arendo?
+            </AccordionTrigger>
+            <AccordionContent>
+              Да! Arendo автоматически учитывает все арендные платежи — вам не
+              нужно вести таблицы вручную. Сервис фиксирует оплаты, напоминает
+              жильцам о сроках и показывает актуальное состояние по каждому
+              объекту.
+            </AccordionContent>
+          </AccordionItem>
+
+          <AccordionItem value="item-4">
+            <AccordionTrigger>
               Насколько безопасно хранение документов?
             </AccordionTrigger>
             <AccordionContent>
@@ -55,7 +67,7 @@ const FaqSection = () => {
             </AccordionContent>
           </AccordionItem>
 
-          <AccordionItem value="item-4">
+          <AccordionItem value="item-5">
             <AccordionTrigger>
               Сколько будет стоить пользование сервисом?
             </AccordionTrigger>
@@ -66,7 +78,7 @@ const FaqSection = () => {
             </AccordionContent>
           </AccordionItem>
 
-          <AccordionItem value="item-5">
+          <AccordionItem value="item-6">
             <AccordionTrigger>
               Когда планируется запуск сервиса?
             </AccordionTrigger>
@@ -77,19 +89,19 @@ const FaqSection = () => {
             </AccordionContent>
           </AccordionItem>
 
-          <AccordionItem value="item-6">
+          <AccordionItem value="item-7">
             <AccordionTrigger>
               Можно ли автоматически формировать договор аренды?
             </AccordionTrigger>
             <AccordionContent>
-              В Arendo есть возможность создавать договоры аренды по заранее
-              настроенным шаблонам. Система автоматически подставит данные
-              арендаторов, сроки и суммы платежей. Все шаблоны соответствуют
-              актуальному законодательству.
+              В Arendo можно автоматически сформировать{" "}
+              <strong>договор аренды онлайн</strong> — по заранее настроенному
+              шаблону. Система сама подставит данные арендаторов, сроки и суммы
+              платежей. Все шаблоны соответствуют актуальному законодательству.
             </AccordionContent>
           </AccordionItem>
 
-          <AccordionItem value="item-7">
+          <AccordionItem value="item-8">
             <AccordionTrigger>
               Возможно ли подключить эквайринг для приема оплат?
             </AccordionTrigger>
@@ -102,7 +114,7 @@ const FaqSection = () => {
             </AccordionContent>
           </AccordionItem>
 
-          <AccordionItem value="item-8">
+          <AccordionItem value="item-9">
             <AccordionTrigger>
               Как добавить новый объект недвижимости в систему?
             </AccordionTrigger>
@@ -115,7 +127,7 @@ const FaqSection = () => {
             </AccordionContent>
           </AccordionItem>
 
-          <AccordionItem value="item-9">
+          <AccordionItem value="item-10">
             <AccordionTrigger>
               Есть ли мобильное приложение Arendo?
             </AccordionTrigger>
