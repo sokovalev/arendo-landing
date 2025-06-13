@@ -86,7 +86,7 @@ const Index = () => {
                 Управляйте арендой просто и без стресса
               </span>
             </h1>
-            <p className="text-lg text-muted-foregroun1-5d">
+            <p className="text-lg text-muted-foreground">
               Сервис сам напомнит жильцам о платеже, поможет учесть коммуналку и
               сохранить документы в порядке. Экономьте время, не теряйте деньги
               и будьте уверены, что всё под контролем.
@@ -100,7 +100,7 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="order-first md:order-last flex justify-center animate-float">
+          <div className="flex justify-center animate-float">
             <div className="w-full max-w-md hover-scale">
               <HeroImage />
             </div>
