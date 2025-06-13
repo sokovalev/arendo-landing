@@ -11,15 +11,19 @@ const SeoContent = () => {
         <div className="grid md:grid-cols-2 gap-12">
           <div className="space-y-6">
             <h3 className="text-xl font-semibold mb-4">
-              Почему управление арендой недвижимости требует автоматизации?
+              Почему без автоматизации сложно?
             </h3>
             <p className="text-muted-foreground">
-              Управление арендной недвижимостью для частных владельцев часто
-              становится настоящим испытанием. Необходимость отслеживать
-              платежи, напоминать арендаторам о сроках оплаты, контролировать
-              коммунальные платежи и хранить множество документов отнимает
-              значительное количество времени и энергии, создавая дополнительный
-              стресс.
+              Управление арендой может превратиться в головную боль: нужно
+              следить за платежами, напоминать жильцам, контролировать
+              коммуналку, копаться в бумагах...
+            </p>
+            <p className="text-muted-foreground">
+              <strong>Arendo снимает эти задачи с ваших плеч.</strong>
+            </p>
+            <p className="text-muted-foreground">
+              Сервис автоматизирует всё — от платежей до хранения документов — и
+              даёт вам больше свободы.
             </p>
             <p className="text-muted-foreground">
               Arendo разработан специально для решения этих проблем. Наша
@@ -30,33 +34,31 @@ const SeoContent = () => {
 
             <div className="mt-6">
               <h4 className="font-semibold mb-2">
-                Преимущества автоматизации процессов аренды:
+                Что даёт автоматизация с Arendo?
               </h4>
               <ul className="space-y-2">
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                   <span className="text-muted-foreground">
-                    Существенная экономия времени на административных задачах
+                    Экономия до 10 часов в месяц
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                   <span className="text-muted-foreground">
-                    Снижение риска просрочек платежей благодаря автоматическим
-                    напоминаниям
+                    Меньше просрочек — благодаря напоминаниям
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                   <span className="text-muted-foreground">
-                    Централизованное хранение всех документов с удобным доступом
+                    Все документы — в одном месте, всегда под рукой
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                   <span className="text-muted-foreground">
-                    Улучшение взаимоотношений с арендаторами благодаря
-                    профессиональному подходу
+                    Больше доверия и порядка в отношениях с жильцами
                   </span>
                 </li>
               </ul>
@@ -65,7 +67,7 @@ const SeoContent = () => {
 
           <div className="space-y-6">
             <h3 className="text-xl font-semibold mb-4">
-              Arendo – инновационная CRM для частных арендодателей
+              Arendo — современный сервис для частных арендодателей
             </h3>
             <p className="text-muted-foreground">
               Arendo — сервис для частных владельцев, управляющих несколькими
@@ -87,34 +89,30 @@ const SeoContent = () => {
             </p>
 
             <div className="mt-6">
-              <h4 className="font-semibold mb-2">
-                Arendo идеально подходит для:
-              </h4>
+              <h4 className="font-semibold mb-2">Кому подойдёт Arendo?</h4>
               <ul className="space-y-2">
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                   <span className="text-muted-foreground">
-                    Частных собственников недвижимости, сдающих объекты в аренду
+                    Владельцам объектов недвижимости, сдающих их в аренду
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                   <span className="text-muted-foreground">
-                    Начинающих инвесторов в недвижимость
+                    Новичкам в аренде
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                   <span className="text-muted-foreground">
-                    Людей, которые совмещают основную работу с управлением
-                    арендной собственностью
+                    Тем, кто совмещает это с работой
                   </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                   <span className="text-muted-foreground">
-                    Владельцев недвижимости, стремящихся системно и эффективно
-                    управлять ареной
+                    Тем, кто хочет управлять по-взрослому, а не “на коленке”
                   </span>
                 </li>
               </ul>

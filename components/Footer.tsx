@@ -13,15 +13,17 @@ const Footer = () => {
               <span className="text-2xl font-bold text-white">Arendo</span>
             </div>
             <p className="text-gray-400 max-w-md">
-              Современное CRM-решение для управления арендной недвижимостью,
-              созданное для частных арендодателей и небольших компаний.
+              Arendo - простой и надёжный сервис для частных арендодателей.
+              Управляйте арендаторами, платежами и документами - без лишней
+              суеты.
             </p>
           </div>
         </div>
 
         <div className="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-500 text-sm">
-            &copy; {currentYear} Arendo. Все права защищены.
+            &copy; {currentYear} Arendo. Сделано с заботой о частных
+            арендодателях.
           </p>
 
           {/* <div className="flex space-x-4 mt-4 md:mt-0">
