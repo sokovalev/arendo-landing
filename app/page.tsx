@@ -83,13 +83,13 @@ const Index = () => {
             <h1 className="text-4xl md:text-5xl font-bold leading-tight text-secondary animate-fade-in">
               Сдаёте квартиру?
               <span className="text-primary">
-                Управляйте арендой просто и без стресса
+                Современное управление арендой без стресса
               </span>
             </h1>
             <p className="text-lg text-muted-foreground">
-              Сервис сам напомнит жильцам о платеже, поможет учесть коммуналку и
-              сохранить документы в порядке. Экономьте время, не теряйте деньги
-              и будьте уверены, что всё под контролем.
+              Сервис сам напомнит жильцам о платеже, упростит учет арендных
+              платежей, поможет с коммуналкой и хранением документов. Экономьте
+              время, не теряйте деньги и будьте уверены, что всё под контролем.
             </p>
 
             <LeadForm />
@@ -116,11 +116,11 @@ const Index = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Ваш личный помощник в управлении арендой
+              Автоматизация аренды без стресса
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              С Arendo просто держать всё под контролем: платежи, коммуналку и
-              документы - без нервов и таблиц.
+              Arendo — это простой инструмент для автоматизации аренды: платежи,
+              коммуналка и документы — всё под контролем, без нервов и таблиц.
             </p>
           </div>
 
@@ -141,14 +141,14 @@ const Index = () => {
 
             <FeatureCard
               icon={<Wallet className="h-10 w-10 text-primary" />}
-              title="Учет доходов и расходов"
-              description="Чётко видите доходы и расходы по аренде и ремонту. Просто считать прибыль с каждого объекта."
+              title="Учёт арендаторов и платежей"
+              description="Вся информация о жильцах, сроках аренды, истории оплат и учёте коммунальных услуг — в одном месте. Никаких таблиц и путаницы."
               number="03"
             />
 
             <FeatureCard
               icon={<FolderArchive className="h-10 w-10 text-primary" />}
-              title="Документы под рукой"
+              title="Хранение документов по аренде"
               description="Документы всегда в порядке и под рукой. Больше не надо искать договоры в WhatsApp или на антресолях."
               number="04"
             />
@@ -201,7 +201,8 @@ const Index = () => {
               Зачем вам Arendo?
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Простой и понятный сервис для тех, кто сам сдаёт жильё. Без
+              Простой и понятный сервис для тех, кто сам сдаёт жильё. Arendo
+              автоматизирует учёт арендаторов, платежей и документов — без
               таблиц, переписок и беготни.
             </p>
           </div>
@@ -219,7 +220,9 @@ const Index = () => {
               <ul className="mt-4 space-y-2">
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                  <span className="text-sm">Автоматический учет платежей</span>
+                  <span className="text-sm">
+                    Автоматический учет арендных платежей
+                  </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
