@@ -19,6 +19,11 @@ export default function LeadForm({
       e.preventDefault();
       try {
         await createLead(email);
+
+        if (process.env.NODE_ENV === "production" && window.ym) {
+          window.ym(102649639, "reachGoal", "email_submitted");
+        }
+
         setEmail("");
       } catch (error) {
         console.error(error);
