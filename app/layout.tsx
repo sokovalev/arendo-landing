@@ -59,7 +59,7 @@ export default function RootLayout({
           {/* Header */}
           <header className="border-b border-gray-100 py-4 px-6 md:px-8 sticky top-0 bg-white/90 backdrop-blur-sm z-10">
             <div className="max-w-7xl mx-auto flex justify-between items-center">
-              <a href="#hero-section" className="flex items-center space-x-2">
+              <a href="/" className="flex items-center space-x-2">
                 <Building2 className="h-8 w-8 text-primary" />
                 <span className="text-2xl font-bold">Arendo</span>
               </a>

@@ -18,7 +18,7 @@ export interface Lead {
   created_at: string;
 }
 
-export function addLead(email: string): Lead | null {
+export function addLead(email: string, isAgreed: boolean): Lead | null {
   try {
     const stmt = db.prepare("INSERT INTO leads (email) VALUES (?)");
     const result = stmt.run(email);

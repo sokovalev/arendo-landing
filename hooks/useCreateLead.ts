@@ -4,7 +4,7 @@ import { toast } from "sonner";
 export function useCreateLead() {
   const [loading, setLoading] = useState(false);
 
-  const createLead = useCallback(async (email: string) => {
+  const createLead = useCallback(async (email: string, isAgreed: boolean) => {
     setLoading(true);
 
     try {
@@ -13,7 +13,7 @@ export function useCreateLead() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({ email, isAgreed }),
       });
 
       if (!response.ok) {
