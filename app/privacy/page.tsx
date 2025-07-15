@@ -27,7 +27,7 @@ export default function PrivacyPolicyPage() {
                   Индивидуальный предприниматель <strong>[ФИО]</strong>
                 </li>
                 <li>
-                  ИНН <strong>[ваш ИНН]</strong>, ОГРНИП{" "}
+                  ИНН <strong>622907578100</strong>, ОГРНИП <strong>317623400011691</strong>
                   <strong>[номер]</strong>
                 </li>
                 <li>
