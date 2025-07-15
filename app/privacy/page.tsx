@@ -180,10 +180,10 @@ export default function PrivacyPolicyPage() {
                 <li>
                   📧{" "}
                   <a
-                    href="mailto:privacy@arendo.pro"
+                    href="mailto:support@arendo.pro"
                     className="text-primary hover:underline"
                   >
-                    privacy@arendo.pro
+                    support@arendo.pro
                   </a>
                 </li>
               </ul>
