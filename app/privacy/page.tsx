@@ -61,10 +61,10 @@ export default function PrivacyPolicyPage() {
                 Вы можете отказаться от рассылки в любой момент - перейдя по
                 ссылке в письме или написав нам на{" "}
                 <a
-                  href="mailto:privacy@arendo.pro"
+                  href="mailto:support@arendo.pro"
                   className="text-primary hover:underline"
                 >
-                  privacy@arendo.pro
+                  support@arendo.pro
                 </a>
                 .
               </p>
