@@ -50,8 +50,8 @@ const Footer = () => {
             <h4 className="font-semibold text-white mb-4">Контакты</h4>
             <ul className="space-y-2 text-gray-400 text-sm">
               <li>
-                <a href="mailto:privacy@arendo.pro" className="hover:underline">
-                  privacy@arendo.pro
+                <a href="mailto:support@arendo.pro" className="hover:underline">
+                  support@arendo.pro
                 </a>
               </li>
               <li>
