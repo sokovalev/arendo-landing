@@ -24,14 +24,12 @@ export default function PrivacyPolicyPage() {
               <p>Оператор персональных данных:</p>
               <ul className="list-inside list-disc space-y-1 pl-4">
                 <li>
-                  Индивидуальный предприниматель <strong>Ковалев Станислав Олегович</strong>
+                  Индивидуальный предприниматель{" "}
+                  <strong>Ковалев Станислав Олегович</strong>
                 </li>
                 <li>
-                  ИНН <strong>622907578100</strong>, ОГРНИП <strong>317623400011691</strong>
-                  <strong>[номер]</strong>
-                </li>
-                <li>
-                  Адрес регистрации: <strong>[город, адрес]</strong>
+                  ИНН <strong>622907578100</strong>, ОГРНИП{" "}
+                  <strong>317623400011691</strong>
                 </li>
               </ul>
             </div>
