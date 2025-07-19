@@ -8,6 +8,7 @@ db.exec(`
   CREATE TABLE IF NOT EXISTS leads (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     email TEXT NOT NULL UNIQUE,
+    is_agreed BOOLEAN NOT NULL DEFAULT FALSE,
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
   )
 `);
@@ -18,10 +19,12 @@ export interface Lead {
   created_at: string;
 }
 
-export function addLead(email: string): Lead | null {
+export function addLead(email: string, isAgreed: boolean): Lead | null {
   try {
-    const stmt = db.prepare("INSERT INTO leads (email) VALUES (?)");
-    const result = stmt.run(email);
+    const stmt = db.prepare(
+      "INSERT INTO leads (email, is_agreed) VALUES (?, ?)"
+    );
+    const result = stmt.run(email, isAgreed);
     return {
       id: result.lastInsertRowid as number,
       email,
