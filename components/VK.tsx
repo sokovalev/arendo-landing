@@ -7,9 +7,6 @@ export default function VK() {
       strategy="afterInteractive"
       dangerouslySetInnerHTML={{
         __html: `
-
-<!-- Top.Mail.Ru counter -->
-<script type="text/javascript">
 var _tmr = window._tmr || (window._tmr = []);
 _tmr.push({id: "3676981", type: "pageView", start: (new Date()).getTime()});
 (function (d, w, id) {
@@ -19,12 +16,18 @@ _tmr.push({id: "3676981", type: "pageView", start: (new Date()).getTime()});
   var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
   if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
 })(document, window, "tmr-code");
-</script>
-<noscript><div><img src="https://top-fwz1.mail.ru/counter?id=3676981;js=na" style="position:absolute;left:-9999px;" alt="Top.Mail.Ru" /></div></noscript>
-<!-- /Top.Mail.Ru counter -->
-
         `,
       }}
-    />
+    >
+      <noscript>
+        <div>
+          <img
+            src="https://top-fwz1.mail.ru/counter?id=3676981;js=na"
+            style="position:absolute;left:-9999px;"
+            alt="Top.Mail.Ru"
+          />
+        </div>
+      </noscript>
+    </Script>
   );
 }
