@@ -23,7 +23,7 @@ _tmr.push({id: "3676981", type: "pageView", start: (new Date()).getTime()});
         <div>
           <img
             src="https://top-fwz1.mail.ru/counter?id=3676981;js=na"
-            style="position:absolute;left:-9999px;"
+            style={{ position: "absolute", left: "-9999px" }}
             alt="Top.Mail.Ru"
           />
         </div>
