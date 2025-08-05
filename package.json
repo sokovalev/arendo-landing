@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prod:rebuild": "npm run build && pm2 restart && systemctl reload nginx"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.11",
