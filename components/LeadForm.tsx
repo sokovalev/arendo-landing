@@ -25,12 +25,21 @@ export default function LeadForm({
         await createLead(email, isAgreed);
 
         if (process.env.NODE_ENV === "production" && window.ym) {
-          window.ym(102649639, "reachGoal", "email_submitted");
-          window._tmr.push({
-            type: "reachGoal",
-            id: 3676981,
-            goal: "submit-email",
-          });
+          try {
+            window.ym(102649639, "reachGoal", "email_submitted");
+          } catch (error) {
+            console.error(error);
+          }
+
+          try {
+            window._tmr.push({
+              type: "reachGoal",
+              id: 3676981,
+              goal: "submit-email",
+            });
+          } catch (error) {
+            console.error(error);
+          }
         }
 
         setEmail("");
