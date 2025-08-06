@@ -26,6 +26,11 @@ export default function LeadForm({
 
         if (process.env.NODE_ENV === "production" && window.ym) {
           window.ym(102649639, "reachGoal", "email_submitted");
+          window._tmr.push({
+            type: "reachGoal",
+            id: 3676981,
+            goal: "submit-email",
+          });
         }
 
         setEmail("");
