@@ -50,7 +50,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ru">
       <head>
         <YM />
         <VK />
@@ -66,24 +66,13 @@ export default function RootLayout({
                 <Building2 className="h-8 w-8 text-primary" />
                 <span className="text-2xl font-bold">Arendo</span>
               </a>
-              <nav className="hidden md:flex items-center space-x-6">
+
+              <nav className="hidden md:flex items-end space-x-6">
                 <a
                   href="#features"
                   className="text-sm font-medium hover:text-primary transition-colors"
                 >
                   Возможности
-                </a>
-                <a
-                  href="#benefits"
-                  className="text-sm font-medium hover:text-primary transition-colors"
-                >
-                  Почему Arendo?
-                </a>
-                <a
-                  href="#demo"
-                  className="text-sm font-medium hover:text-primary transition-colors"
-                >
-                  Демо
                 </a>
                 <a
                   href="#faq"
