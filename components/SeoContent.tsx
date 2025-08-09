@@ -1,123 +1,99 @@
 import { CheckCircle2 } from "lucide-react";
+import LeadForm from "./LeadForm";
 
 const SeoContent = () => {
   return (
-    <section className="py-16 px-6 md:px-8 bg-muted/30">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl font-bold mb-8 text-secondary">
-          Эффективное управление арендой недвижимости с Arendo
-        </h2>
+    <section className="py-14 px-6 md:px-8 bg-muted/30">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
+        <div>
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">
+            Кому это подойдёт
+          </h2>
+          <ul className="space-y-2 text-muted-foreground">
+            <li className="flex gap-2">
+              <svg
+                className="h-5 w-5 text-primary"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+              >
+                <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.68 0C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.2 1.2 0 0 1 1.52 0C14.5 3.8 17 5 19 5a1 1 0 0 1 1 1v7Z" />
+              </svg>
+              Частным арендодателям с 1–10 объектами
+            </li>
+            <li className="flex gap-2">
+              <svg
+                className="h-5 w-5 text-primary"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <path d="m9 12 2 2 4-4" />
+              </svg>
+              Тем, кто устал от таблиц и переписок
+            </li>
+            <li className="flex gap-2">
+              <svg
+                className="h-5 w-5 text-primary"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <path d="m9 12 2 2 4-4" />
+              </svg>
+              Кому важны сроки оплат и порядок в документах
+            </li>
+          </ul>
+        </div>
 
-        <div className="grid md:grid-cols-2 gap-12">
-          <div className="space-y-6">
-            <h3 className="text-xl font-semibold mb-4">
-              Почему без автоматизации сложно?
-            </h3>
-            <p className="text-muted-foreground">
-              Управление арендой может превратиться в головную боль: нужно
-              следить за платежами, напоминать жильцам, контролировать
-              коммуналку, копаться в бумагах...
-            </p>
-            <p className="text-muted-foreground">
-              <strong>Arendo снимает эти задачи с ваших плеч.</strong>
-            </p>
-            <p className="text-muted-foreground">
-              Сервис автоматизирует всё — от платежей до хранения документов — и
-              даёт вам больше свободы.
-            </p>
-            <p className="text-muted-foreground">
-              Arendo разработан специально для решения этих проблем. Наша
-              автоматизированная CRM-система для арендодателей берет на себя все
-              рутинные задачи, позволяя вам сосредоточиться на действительно
-              важных вещах.
-            </p>
+        <div>
+          <h3 className="text-2xl font-bold mb-4">Что получите</h3>
+          <ul className="space-y-2 text-muted-foreground">
+            <li className="flex gap-2">
+              <svg
+                className="h-5 w-5 text-primary"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <path d="m9 12 2 2 4-4" />
+              </svg>
+              Календарь платежей и статусы по каждому объекту
+            </li>
+            <li className="flex gap-2">
+              <svg
+                className="h-5 w-5 text-primary"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <path d="m9 12 2 2 4-4" />
+              </svg>
+              Автонапоминания в Telegram/SMS без вашего участия
+            </li>
+            <li className="flex gap-2">
+              <svg
+                className="h-5 w-5 text-primary"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <path d="m9 12 2 2 4-4" />
+              </svg>
+              Документы и коммуналка - в одном месте
+            </li>
+          </ul>
+        </div>
+      </div>
 
-            <div className="mt-6">
-              <h4 className="font-semibold mb-2">
-                Что даёт автоматизация с Arendo?
-              </h4>
-              <ul className="space-y-2">
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                  <span className="text-muted-foreground">
-                    Экономия до 10 часов в месяц
-                  </span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                  <span className="text-muted-foreground">
-                    Меньше просрочек — благодаря напоминаниям
-                  </span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                  <span className="text-muted-foreground">
-                    Все документы — в одном месте, всегда под рукой
-                  </span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                  <span className="text-muted-foreground">
-                    Больше доверия и порядка в отношениях с жильцами
-                  </span>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="space-y-6">
-            <h3 className="text-xl font-semibold mb-4">
-              Arendo — современный сервис для частных арендодателей
-            </h3>
-            <p className="text-muted-foreground">
-              Arendo — сервис для частных владельцев, управляющих несколькими
-              объектами недвижимости. Подходит для аренды жилья, коммерческих и
-              нежилых помещений. Упростите рутину, контролируйте платежи,
-              экономьте время.
-            </p>
-            <p className="text-muted-foreground">
-              Автоматическая система напоминаний через SMS и Telegram
-              обеспечивает своевременную оплату аренды, а встроенный календарь
-              платежей помогает держать под контролем финансовые потоки. Система
-              безопасного хранения документов избавляет от необходимости искать
-              нужный договор или акт в бумажных архивах.
-            </p>
-            <p className="text-muted-foreground">
-              В современных условиях автоматизация управления арендой – это не
-              роскошь, а необходимость для тех, кто ценит свое время и стремится
-              к максимальной эффективности своих инвестиций в недвижимость.
-            </p>
-
-            <div className="mt-6">
-              <h4 className="font-semibold mb-2">Кому подойдёт Arendo?</h4>
-              <ul className="space-y-2">
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                  <span className="text-muted-foreground">
-                    Владельцам объектов недвижимости, сдающих их в аренду
-                  </span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                  <span className="text-muted-foreground">
-                    Новичкам в аренде
-                  </span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                  <span className="text-muted-foreground">
-                    Тем, кто совмещает это с работой
-                  </span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-                  <span className="text-muted-foreground">
-                    Тем, кто хочет управлять по-взрослому, а не “на коленке”
-                  </span>
-                </li>
-              </ul>
-            </div>
-          </div>
+      <div className="mt-10 flex justify-center">
+        <div className="max-w-2xl w-full bg-white/50 backdrop-blur-sm rounded-lg p-8 shadow-lg border border-primary/10">
+          <LeadForm variant="primary" buttonText="Присоединиться" />
         </div>
       </div>
     </section>
