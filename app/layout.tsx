@@ -50,7 +50,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="ru">
       <head>
         <YM />
         <VK />
@@ -67,7 +67,7 @@ export default function RootLayout({
                 <span className="text-2xl font-bold">Arendo</span>
               </a>
 
-              <nav className="hidden md:flex items-right space-x-6">
+              <nav className="hidden md:flex items-end space-x-6">
                 <a
                   href="#features"
                   className="text-sm font-medium hover:text-primary transition-colors"

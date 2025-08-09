@@ -14,7 +14,7 @@ const HeroImage = dynamic(() => import("@/components/HeroImage"), {
 });
 const FaqSection = dynamic(() => import("@/components/FaqSection"));
 const ProductDemo = dynamic(() => import("@/components/ProductDemo"));
-const SeoContent = dynamic(() => import("@/components/SeoContent"));
+// const SeoContent = dynamic(() => import("@/components/SeoContent"));
 const LeadForm = dynamic(() => import("@/components/LeadForm"));
 
 const Index = () => {
@@ -44,7 +44,8 @@ const Index = () => {
             <LeadForm />
 
             <p className="text-sm text-muted-foreground">
-              134 арендодателя в списке ожидания.
+              134 арендодателя в списке ожидания. Присоединяйтесь - приглашаем
+              по очереди
               <br />
               Запуск - осень 2025.
             </p>
@@ -96,9 +97,6 @@ const Index = () => {
 
       {/* FAQ Section */}
       <FaqSection />
-
-      {/* SEO Content Section */}
-      <SeoContent />
     </>
   );
 };

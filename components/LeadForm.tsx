@@ -7,7 +7,7 @@ import Link from "next/link";
 
 export default function LeadForm({
   variant = "primary",
-  buttonText = "Получить доступ",
+  buttonText = "Хочу в бета",
 }: {
   variant?: "primary" | "secondary";
   buttonText?: string;
@@ -18,8 +18,10 @@ export default function LeadForm({
   const handleSubmit = useCallback(
     async (e: React.FormEvent) => {
       e.preventDefault();
+      const trimmedEmail = email.trim();
+
       try {
-        await createLead(email, true);
+        await createLead(trimmedEmail, true);
 
         if (process.env.NODE_ENV === "production" && window.ym) {
           try {
@@ -56,6 +58,10 @@ export default function LeadForm({
       <div className="flex flex-col sm:flex-row gap-4">
         <Input
           type="email"
+          name="email"
+          autoComplete="email"
+          inputMode="email"
+          spellCheck={false}
           placeholder="Ваш email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}

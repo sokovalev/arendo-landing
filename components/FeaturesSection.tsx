@@ -32,7 +32,7 @@ export default function FeaturesSection() {
               <>
                 Наглядно видите, кто, сколько и когда платит.
                 <span className="block mt-1 text-sm text-green-600">
-                  → Меньше просрочек на 30–40%
+                  Меньше просрочек на 30–40%
                 </span>
               </>
             }
@@ -46,7 +46,7 @@ export default function FeaturesSection() {
               <>
                 Telegram и SMS напомнят жильцам вовремя.
                 <span className="block mt-1 text-sm text-green-600">
-                  → Минус 10–15 ручных сообщений в месяц
+                  Минус 10–15 ручных сообщений в месяц
                 </span>
               </>
             }
@@ -60,7 +60,7 @@ export default function FeaturesSection() {
               <>
                 История оплат и коммуналки без таблиц и хаоса.
                 <span className="block mt-1 text-sm text-green-600">
-                  → Быстрый доступ к данным за секунды
+                  Быстрый доступ к данным за секунды
                 </span>
               </>
             }
@@ -74,7 +74,7 @@ export default function FeaturesSection() {
               <>
                 Договоры всегда в порядке и доступны в пару кликов.
                 <span className="block mt-1 text-sm text-green-600">
-                  → Нет потерь и путаницы в бумагах
+                  Нет потерь и путаницы в бумагах
                 </span>
               </>
             }
